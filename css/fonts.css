@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Value Serif Bold";
+    src: url("../fonts/valueserifbold/valueserifbold.eot"); /* IE9*/
+    src: url("../fonts/valueserifbold/valueserifbold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/valueserifbold/valueserifbold.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/valueserifbold/valueserifbold.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/valueserifbold/valueserifbold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/valueserifbold/valueserifbold.svg#Value Serif Bold") format("svg"); /* iOS 4.1- */
+  }
+  
+  @font-face {
+    font-family: "Value Serif Pro Regular";
+    src: url("../fonts/valueserifproregular/valueserifproregular.eot"); /* IE9*/
+    src: url("../fonts/valueserifproregular/valueserifproregular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/valueserifproregular/valueserifproregular.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/valueserifproregular/valueserifproregular.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/valueserifproregular/valueserifproregular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/valueserifproregular/valueserifproregular.svg#Value Serif Pro Regular") format("svg"); /* iOS 4.1- */
+  }
+
+  @font-face {
+    font-family: "GT Pressura Mono Regular";
+    src: url("../fonts/gtpressuramonoregular/gtpressuramonoregular.eot"); /* IE9*/
+    src: url("../fonts/gtpressuramonoregular/gtpressuramonoregular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/gtpressuramonoregular/gtpressuramonoregular.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/gtpressuramonoregular/gtpressuramonoregular.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/gtpressuramonoregular/gtpressuramonoregular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/gtpressuramonoregular/gtpressuramonoregular.svg#GT Pressura Mono Regular") format("svg"); /* iOS 4.1- */
+  }
