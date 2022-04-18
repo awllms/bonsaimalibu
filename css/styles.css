@@ -262,7 +262,7 @@ button:hover {
     text-align: center;
 }
 
-.nav-dropdown:hover .nav-options {
+.nav-dropdown:hover .nav-options, .nav-dropdown:active .nav-options {
     display: block;
     visibility: visible;
 }
