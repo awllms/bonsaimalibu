@@ -423,7 +423,30 @@ button:hover {
     font-size: 1.1rem;
 }
 
+/* Sub Pages */
 
+
+.subpage-content {
+    margin-top: 30px;
+}
+
+.subpage-content h2 {
+    margin-bottom: 30px;
+}
+
+
+/* About Page */
+
+.about-content-text {
+    line-height: 32px;
+}
+
+/* Products Page */
+
+.products-section.subpage {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
 
 /* Responsive Styling */
 
