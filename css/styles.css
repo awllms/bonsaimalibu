@@ -267,7 +267,7 @@ button:hover {
     visibility: visible;
 }
 
-.nav-dropdown:active .nav-options {
+.nav-dropdown:focus .nav-options {
     display: block;
     visibility: visible;
 }
