@@ -289,7 +289,7 @@ button:hover {
 }
 
 .main-image-content {
-    margin-top: 30px;
+    margin-top: 40px;
     max-width: 100%;
 }
 
@@ -427,11 +427,15 @@ button:hover {
 
 
 .subpage-content {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .subpage-content h2 {
     margin-bottom: 30px;
+}
+
+.address-content.subpage {
+    margin-top: 200px;
 }
 
 
