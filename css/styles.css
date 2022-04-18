@@ -233,14 +233,17 @@ button:hover {
 
 .nav-dropdown {
     display: none;
+    visibility: hidden;
 }
 
 .nav-dropdown i {
     display: none;
+    visibility: hidden;
 }
 
 .nav-options {
     display: none;
+    visibility: hidden;
     background-color: white;
     position: absolute;
     min-width: 100px;
@@ -260,6 +263,7 @@ button:hover {
 
 .nav-dropdown:hover .nav-options {
     display: block;
+    visibility: visible;
 }
 
 .nav-item {
@@ -290,6 +294,7 @@ button:hover {
 .main-image-content img {
     width: 100%;
     max-width: 100%;
+    border-radius: 5px;
 }
 
 .image-title {
@@ -905,15 +910,18 @@ button:hover {
 
     .nav {
         display: none;
+        visibility: hidden;
     }
 
     .nav-dropdown {
         display: inline-block;
         position: relative;
+        visibility: visible;
     }
     
     .nav-dropdown i {
         display: block;
+        visibility: visible;
     }
 
     /* .main-image-content {
@@ -928,6 +936,7 @@ button:hover {
     
     .image-button {
         display: none;
+        visibility: hidden;
     }
 
 
