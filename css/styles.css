@@ -234,6 +234,7 @@ button:hover {
 .nav-dropdown {
     display: none;
     visibility: hidden;
+    cursor: pointer;
 }
 
 .nav-dropdown i {
@@ -262,6 +263,11 @@ button:hover {
 }
 
 .nav-dropdown:hover .nav-options {
+    display: block;
+    visibility: visible;
+}
+
+.nav-dropdown:active .nav-options {
     display: block;
     visibility: visible;
 }
