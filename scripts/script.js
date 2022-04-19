@@ -1,11 +1,15 @@
-const menuButton = document.getElementById('hamburger-menu');
-const documentBody = document.getElementById('document-body');
-const navOptions = document.querySelector('.nav-options');
+const menuButton = document.getElementById("hamburger-menu");
+const purchaseButton = document.getElementById("purchase-button");
+const navOptions = document.querySelector(".nav-options");
 
-menuButton.onclick = buttonClick;
+menuButton.onclick = navDropDownButtonClick;
+
+if (purchaseButton) {
+    purchaseButton.onclick = purchaseButtonClick;
+}
 
 // For mobile browsers
-function buttonClick() {
+function navDropDownButtonClick() {
     if (navOptions.style.display === "block") {
         navOptions.style.display = "none";
     } else {
@@ -17,4 +21,8 @@ function buttonClick() {
     } else {
         navOptions.style.visibility = "visible";
     }
+}
+
+function purchaseButtonClick() {
+    location.href = '../contact';
 }

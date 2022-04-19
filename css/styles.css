@@ -147,11 +147,11 @@ a {
     color: black;
 }
 
-h1, h2, h3, h4, button {
+h1, h2, h3, h4, h5, button {
     font-family: 'Value Serif Bold';
 }
 
-.important-paragraph-text, .product-item-price, .footer-logo-tagline, .product-page-price {
+.important-paragraph-text, .product-item-price, .footer-logo-tagline, .product-page-price, .notification-content p {
     font-family: 'Value Serif Pro Regular';
 }
 
@@ -369,6 +369,7 @@ button:hover {
 
 .product-item img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .address-content {
@@ -449,7 +450,7 @@ button:hover {
 
 .products-section.subpage {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 /* Product Page */
@@ -459,10 +460,14 @@ button:hover {
     margin-top: 40px;
 }
 
+.product-page-left {
+    padding-right: 60px;
+    padding-top: 8px;
+}
+
 .product-page-left img {
     max-width: 600px;
-    padding-right: 70px;
-    padding-top: 8px;
+    border-radius: 10px;
 }
 
 .product-page-right {
@@ -486,6 +491,88 @@ button:hover {
 .product-page-description {
     line-height: 25px;
     margin-top: 15px;
+}
+
+
+/* Gallery Page */
+
+/* Not Implemented Yet */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* *********************** */
+
+
+/* Disclaimer */
+.notification-container {
+    position: relative;
+}
+
+.notification {
+    position: fixed;
+    background-color: black;
+    color: white;
+    max-width: 25%;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 5px;
+}
+
+.notification:hover {
+    background-color: #8ADB53;
+}
+
+.notification a {
+    color: white;
+}
+
+.notification a:hover {
+    color: black;
+}
+
+
+.notification-content {
+    padding: 20px 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.notification-content p {
+    font-size: 0.5rem;
+}
+
+/* Disclaimer Page */
+
+.about-content-text a {
+    color: #8ADB53;
+}
+
+.about-content-text a:hover {
+    color: black;
 }
 
 /* Responsive Styling */
@@ -583,12 +670,28 @@ button:hover {
         font-size: 1rem;
     }
 
+    .product-page-left {
+        padding-right: 50px;
+    }
+
     .product-page-left img {
-        max-width: 500px;
-        /* padding-right: 70px;
-        padding-top: 8px; */
+        max-width: 550px;
+    }
+
+    .product-page-price {
+        font-size: 1.8rem;
     }
     
+}
+
+@media only screen and (max-width: 1100px) {
+    .product-page-left {
+        padding-right: 50px;
+    }
+
+    .product-page-left img {
+        max-width: 450px;
+    }
 }
 
 @media only screen and (max-width: 975px) {
@@ -685,19 +788,21 @@ button:hover {
         font-size: 1rem;
     }
 
+    .product-page-left {
+        padding-right: 50px;
+    }
 
     .product-page-left img {
-        max-width: 450px;
-        padding-right: 60px;
-        /* padding-right: 70px; */
+        max-width: 400px;
     }
+
+    .product-page-price {
+        font-size: 1.5rem;
+    }
+    
 }
 
 @media only screen and (max-width: 865px) {
-    /* header {
-        margin-top: 30px;
-    } */
-
     nav {
         font-size: 0.9rem;
     }
@@ -757,17 +862,20 @@ button:hover {
         font-size: 1rem;
     }
 
+    .product-page-left {
+        padding-right: 30px;
+    }
+
     .product-page-left img {
-        max-width: 400px;
-        padding-right: 40px;
+        max-width: 350px;
+    }
+
+    .product-page-price {
+        font-size: 1.3rem;
     }
 }
 
 @media only screen and (max-width: 795px) {
-    /* header {
-        margin-top: 30px;
-    } */
-
     nav {
         font-size: 0.9rem;
     }
@@ -791,10 +899,6 @@ button:hover {
 
     }
 
-    /* .main-image-content {
-        margin-top: 20px;
-    } */
-
     .image-title {
         left: 25%;
         font-size: 3rem;
@@ -808,29 +912,9 @@ button:hover {
         padding: 0 50px;
     }
 
-    /* .tagline-content {
-        margin-top: 20px;
-    }
-
-    .tagline-content h2 {
-        margin-bottom: 10px;
-    } */
-
     .important-paragraph-text {
         font-size: 0.75rem;
     }
-
-    /* .products-section {
-        margin-top: 30px;
-    }
-
-    .product-item h4 {
-        margin-top: 15px;
-    }
-
-    .product-item-price {
-        font-size: 0.7rem;
-    } */
 
     .address-content {
         margin-top: 40px;
@@ -860,17 +944,12 @@ button:hover {
         font-size: 0.9rem;
     }
 
-    .product-page-left img {
-        max-width: 350px;
-        padding-right: 40px;
+    .product-page-left {
+        padding-right: 30px;
     }
 }
 
 @media only screen and (max-width: 725px) {
-    /* header {
-        margin-top: 30px;
-    } */
-
     nav {
         font-size: 0.85rem;
     }
@@ -898,10 +977,6 @@ button:hover {
 
     }
 
-    /* .main-image-content {
-        margin-top: 20px;
-    } */
-
     .image-title {
         left: 25%;
         font-size: 2.8rem;
@@ -915,29 +990,9 @@ button:hover {
         padding: 0 50px;
     }
 
-    /* .tagline-content {
-        margin-top: 20px;
-    }
-
-    .tagline-content h2 {
-        margin-bottom: 10px;
-    } */
-
     .important-paragraph-text {
         font-size: 0.75rem;
     }
-
-    /* .products-section {
-        margin-top: 30px;
-    }
-
-    .product-item h4 {
-        margin-top: 15px;
-    }
-
-    .product-item-price {
-        font-size: 0.7rem;
-    } */
 
     .product-item.middle {
         margin: 0 10px;
@@ -974,10 +1029,6 @@ button:hover {
 
 
 @media only screen and (max-width: 655px) {
-    /* header {
-        margin-top: 30px;
-    } */
-
     nav {
         font-size: 0.75rem;
     }
@@ -991,6 +1042,10 @@ button:hover {
     }
 
     h4 {
+        font-size: 0.75rem;
+    }
+
+    h5 {
         font-size: 0.75rem;
     }
 
@@ -1017,10 +1072,6 @@ button:hover {
         visibility: visible;
     }
 
-    /* .main-image-content {
-        margin-top: 20px;
-    } */
-
     .image-title {
         left: 26%;
         font-size: 2.4rem;
@@ -1031,15 +1082,6 @@ button:hover {
         display: none;
         visibility: hidden;
     }
-
-
-    /* .tagline-content {
-        margin-top: 20px;
-    }
-
-    .tagline-content h2 {
-        margin-bottom: 10px;
-    } */
 
     .important-paragraph-text {
         font-size: 0.7rem;
@@ -1052,11 +1094,6 @@ button:hover {
     .product-item h4 {
         margin-top: 10px;
     }
-
-    /*
-    .product-item-price {
-        font-size: 0.7rem;
-    } */
 
     .product-item.middle {
         margin: 0 10px;
@@ -1100,13 +1137,13 @@ button:hover {
         padding-right: 0;
         margin-bottom: 15px;
     }
+
+    .product-page-left {
+        padding-right: 0;
+    }
 }
 
 @media only screen and (max-width: 580px) {
-    /* header {
-        margin-top: 30px;
-    } */
-
     nav {
         font-size: 0.6rem;
     }
@@ -1129,10 +1166,6 @@ button:hover {
         height: 27px;
 
     }
-
-    /* .main-image-content {
-        margin-top: 20px;
-    } */
 
     .image-title {
         left: 30%;
@@ -1167,11 +1200,6 @@ button:hover {
     .product-item h4 {
         margin-top: 10px;
     }
-
-    /*
-    .product-item-price {
-        font-size: 0.7rem;
-    } */
 
     .product-item.middle {
         margin: 0 10px;
@@ -1208,24 +1236,28 @@ button:hover {
 
 
 @media only screen and (max-width: 520px) {
-    /* header {
-        margin-top: 30px;
-    } */
+    header {
+        padding: 0 30px;
+    }
 
     nav {
         font-size: 0.6rem;
     }
 
     h2 {
-        font-size: 1.1rem;
+        font-size: 1.11rem;
     }
 
     h3 {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     h4 {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    .main-content {
+        padding: 0;
     }
 
     .logo {
@@ -1235,9 +1267,9 @@ button:hover {
 
     }
 
-    /* .main-image-content {
-        margin-top: 20px;
-    } */
+    .main-image-content img {
+        border-radius: 0px;
+    }
 
     .image-title {
         left: 24%;
@@ -1253,12 +1285,12 @@ button:hover {
     }
 
     .important-paragraph-text {
-        font-size: 0.5rem;
+        font-size: 0.55rem;
     }
 
     .products-section {
         margin-top: 25px;
-        text-align: center;
+        padding: 0 30px;
     }
 
     .products {
@@ -1266,14 +1298,14 @@ button:hover {
         align-items: center;
     }
 
+    .product-item {
+        max-width: 100%;
+        text-align: center;
+    }
+
     .product-item h4 {
         margin-top: 10px;
     }
-
-    /*
-    .product-item-price {
-        font-size: 0.7rem;
-    } */
 
     .product-item.middle {
         margin: 0 0 20px;
@@ -1285,11 +1317,12 @@ button:hover {
 
     .address-content {
         margin-top: 30px;
-        text-align: center;
+        padding: 0 30px;
     }
 
     .address-container {
         flex-direction: column;
+        text-align: center;
     }
 
     .address-left {
@@ -1298,11 +1331,11 @@ button:hover {
     }
 
     .address-content-p {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .address-right img {
-        max-width: 400px;
+        max-width: 100%;
     }
     
     .footer-social-links img {
@@ -1316,4 +1349,79 @@ button:hover {
     .copyright-text {
         font-size: 0.6rem;
     }
+
+    .subpage-content, .product-page, footer {
+        padding: 0 30px;
+    }
+
+    .products-section.subpage {
+        margin-bottom: 0;
+    }
+    
+}
+
+
+@media only screen and (max-width: 450px) {
+    h2 {
+        font-size: 1rem;
+    }
+
+    .important-paragraph-text {
+        font-size: 0.5rem;
+    }
+
+    header, .subpage-content, .address-content, .products-section, .product-page, footer {
+        padding: 0 15px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 390px) {
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    .important-paragraph-text {
+        font-size: 0.4rem;
+    }
+
+    h5 {
+        font-size: 0.65rem;
+    }
+
+    
+}
+
+@media only screen and (max-width: 330px) {
+    h2 {
+        font-size: 0.8rem;
+    }
+
+    .important-paragraph-text {
+        font-size: 0.4rem;
+    }
+
+    h5 {
+        font-size: 0.5rem;
+    }
+    
+}
+
+@media only screen and (max-width: 300px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-social-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    h5 {
+        font-size: 0.4rem;
+    }
+    
 }
